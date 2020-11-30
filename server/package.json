@@ -8,7 +8,8 @@
     "server": "nodemon app.js",
     "client": "npm run start --prefix ../client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "netflify": "npm run build"
   },
   "author": "steveo",
   "license": "ISC",
