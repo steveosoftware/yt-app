@@ -9,7 +9,7 @@
     "client": "npm run start --prefix ../client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "netflify": "npm run build"
+    "netlify": "npm start"
   },
   "author": "steveo",
   "license": "ISC",
