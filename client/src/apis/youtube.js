@@ -1,16 +1,18 @@
 import axios from 'axios';
 
-const KEY = 'AIzaSyCFyYKBlEGXo73Pg4QAJHZz2-1t1GS2L0s'
+const youtube = async () => {
 
+const {data} = await axios.get('/api')
 
-export default axios.create({
+return axios.create({
   baseURL: 'https://www.googleapis.com/youtube/v3',
   params: {
     part: 'snippet',
     type: 'video',
     maxResults: 5,
-    key: KEY
+    key: data.key
   }
 });
+}
 
-
+export default youtube;
